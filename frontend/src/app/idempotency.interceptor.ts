@@ -8,7 +8,7 @@ export const idempotencyInterceptor: HttpInterceptorFn = (
     const uniqueKey = crypto.randomUUID(); 
 
     const clonedRequest = req.clone({
-      headers: req.headers.set('Idempotency-Key', uniqueKey)
+      headers: req.headers.set('idempotency-Key', uniqueKey)
     });
 
     return next(clonedRequest);
