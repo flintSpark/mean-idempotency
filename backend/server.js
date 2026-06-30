@@ -11,7 +11,7 @@ app.use(cors({ origin: 'http://localhost:4200' })); // Allow your Angular fronte
 app.use(express.json()); // Parse JSON payloads
 
 // 2. Connect to MongoDB (Assumes local installation. Adjust string if using Atlas)
-mongoose.connect('mongodb://127.0.0.1:27017/ltm_demo')
+mongoose.connect('mongodb://127.0.0.1:27017/order_processing')
   .then(() => console.log('🍃 MongoDB Connected Successfully'))
   .catch(err => console.error('MongoDB connection error:', err));
 
