@@ -1,0 +1,1 @@
+Here is a complete frontend with mongodb backend implementation of placing a key within the request headers to ensure if the user clicks the order button twice they are not double charged for their order by mistake. It is a way to failsafe the customer experience and protect the vendor from over charging causing a possible bad customer service experience.
